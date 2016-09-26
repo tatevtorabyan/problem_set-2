@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+	<script>
+	debugger
+	const spaces=function(spc){
+			if(spc===0){
+				return ""};
+			return " " + spaces(spc-1);
+	};
+	const stars=function(str){
+			if(str===0){
+				return ""
+			}
+			return "*" + stars(str-1);
+	};
+	const mix=function(n,spc,str){
+		if(n===0){
+		return ""}
+		console.log(spaces(spc)+stars(str));
+		mix(n-1,spc-1,str+2);
+	};
+	const mix1=function(m){
+	mix(m,m-1,1);
+	}
+	
+	mix1(12)
+	
+	
+	
+	
+	
+	
+	
+	</script>
+	</html>
